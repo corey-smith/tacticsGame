@@ -1,0 +1,12 @@
+
+player_stand_down.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Link
+  rotate: false
+  xy: 2, 2
+  size: 30, 32
+  orig: 30, 32
+  offset: 0, 0
+  index: -1

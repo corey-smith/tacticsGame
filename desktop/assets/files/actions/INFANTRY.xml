@@ -1,0 +1,14 @@
+<actions>
+    <action>
+        <name>Precision</name>
+        <cost>5</cost>
+        <damage>10</damage>
+        <accuracy>75</accuracy>
+    </action>
+    <action>
+        <name>Quick</name>
+        <cost>2</cost>
+        <damage>5</damage>
+        <accuracy>50</accuracy>
+    </action>
+</actions>
