@@ -40,8 +40,10 @@ public abstract class GameView {
 
     private void initializeInput() {
         input = new Input(this);
-        InputMultiplexer inputMultiplexer = new InputMultiplexer(ui.getStage(), input);
-        Gdx.input.setInputProcessor(inputMultiplexer);
+        if(ui != null) {
+            InputMultiplexer inputMultiplexer = new InputMultiplexer(ui.getStage(), input);
+            Gdx.input.setInputProcessor(inputMultiplexer);
+        }
     }
     
     public OrthographicCamera getCamera() {
@@ -50,6 +52,7 @@ public abstract class GameView {
 
     // handle camera movement
     private void updateCamera() {
+        camera.update();
         // left/right
         if (input.leftHeld && !input.rightHeld) {
             camera.translate(-CAMERA_SCROLL_SPEED, 0);

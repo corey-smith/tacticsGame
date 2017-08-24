@@ -60,7 +60,6 @@ public class SkirmishView extends GameView {
 
     @Override
     public void render() {
-        camera.update();
         renderer.render(selectedUnit);
         for (Unit curUnit : units) {
             renderer.drawUnit(curUnit);
